@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_DB_setup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_DB_setup.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DBConnection.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572695910864</updated>
       <workItem from="1572695914225" duration="5267000" />
-      <workItem from="1572788970183" duration="3508000" />
+      <workItem from="1572788970183" duration="3647000" />
     </task>
     <servers />
   </component>
