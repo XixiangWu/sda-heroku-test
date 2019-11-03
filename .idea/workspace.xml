@@ -7,27 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestProjectMaven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_DB_setup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bookshop/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bookshop/BookFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bookshop/browseAllBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/BookGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/Registry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_DB_setup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_DB_setup.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DBConnection.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572695910864</updated>
       <workItem from="1572695914225" duration="5267000" />
-      <workItem from="1572788970183" duration="1638000" />
+      <workItem from="1572788970183" duration="3508000" />
     </task>
     <servers />
   </component>
