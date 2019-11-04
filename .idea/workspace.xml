@@ -2,13 +2,78 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="web:war" />
+      <artifact name="it-support-management-system:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/it-support-management-system.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/META-INF/war-tracker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/sql_DB_setup.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DepartmentFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DepartmentGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/EmployeeGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueCommentFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueCommentGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/Registry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechSkillFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechSkillGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UnitOfWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UserFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UserGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Issue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/IssueComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/IssueStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Tech.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/TechSkill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProjectMaven.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_DB_setup.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bookshop/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bookshop/BookFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bookshop/browseAllBooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BookGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DBConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/Registry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +97,38 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="extensions" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -44,6 +141,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -67,52 +166,31 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="alwaysUpdateSnapshots" value="false" />
         <option name="checksumPolicy" value="FAIL" />
         <option name="failureBehavior" value="FAST" />
-        <option name="localRepository" value="" />
-        <option name="mavenHome" value="" />
-        <option name="nonRecursive" value="false" />
-        <option name="outputLevel" value="INFO" />
-        <option name="pluginUpdatePolicy" value="DEFAULT" />
-        <option name="printErrorStackTraces" value="false" />
-        <option name="usePluginRegistry" value="false" />
-        <option name="userSettingsFile" value="" />
-        <option name="workOffline" value="false" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="createModuleGroups" value="false" />
-        <option name="createModulesForAggregators" value="true" />
-        <option name="dedicatedModuleDir" value="" />
-        <option name="downloadDocsAutomatically" value="false" />
-        <option name="downloadSourcesAutomatically" value="false" />
-        <option name="excludeTargetFolder" value="true" />
-        <option name="generatedSourcesFolder" value="AUTODETECT" />
-        <option name="importAutomatically" value="false" />
-        <option name="keepSourceFolders" value="true" />
-        <option name="lookForNested" value="false" />
-        <option name="updateFoldersOnImportPhase" value="process-resources" />
-        <option name="useMavenOutput" value="true" />
-      </MavenImportingSettings>
-    </option>
-    <option name="enabledProfiles">
-      <list />
     </option>
   </component>
   <component name="ProjectId" id="1T3jwPsxV1c0I7QPHnSOlVmudTz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="database" />
     </key>
@@ -131,10 +209,12 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="web:war exploded">
+        <artifact name="it-support-management-system:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/web_war_exploded" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -146,6 +226,39 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53535" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -164,7 +277,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="web:war exploded" />
+          <artifact name="it-support-management-system:war exploded" />
         </option>
       </method>
     </configuration>
@@ -176,12 +289,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ee6f9f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@930abb54" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f8ee6f9f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@44bd27a0" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@930abb54" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@31b2e2a3" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -201,7 +314,9 @@
       <updated>1572695910864</updated>
       <workItem from="1572695914225" duration="5267000" />
       <workItem from="1572788970183" duration="3950000" />
-      <workItem from="1572794452722" duration="1056000" />
+      <workItem from="1572794452722" duration="1871000" />
+      <workItem from="1572796902920" duration="2907000" />
+      <workItem from="1572801452331" duration="7340000" />
     </task>
     <servers />
   </component>
@@ -220,5 +335,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
