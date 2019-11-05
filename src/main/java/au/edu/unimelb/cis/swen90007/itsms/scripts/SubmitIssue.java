@@ -1,6 +1,6 @@
 package au.edu.unimelb.cis.swen90007.itsms.scripts;
 
-import au.edu.unimelb.cis.swen90007.itsms.database.UnitOfWork;
+import au.edu.unimelb.cis.swen90007.itsms.database.*;
 import au.edu.unimelb.cis.swen90007.itsms.domain.Issue;
 import au.edu.unimelb.cis.swen90007.itsms.domain.IssueStatus;
 import au.edu.unimelb.cis.swen90007.itsms.domain.Tech;
@@ -38,9 +38,12 @@ public class SubmitIssue extends HttpServlet {
                 description, false, timestamp);
         UnitOfWork unitOfWork = new UnitOfWork();
         Issue.createIssue(issue, unitOfWork);
+        for (IGateway ig: unitOfWork.newObjects) {
+            IssueGateway igm = (IssueGateway) ig;
+            System.out.println(igm.getDescription());
+        }
         unitOfWork.commit();
         response.sendRedirect("/view");
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

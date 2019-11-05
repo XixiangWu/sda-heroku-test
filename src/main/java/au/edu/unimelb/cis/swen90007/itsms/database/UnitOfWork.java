@@ -10,7 +10,7 @@ import java.util.List;
  * connected database, and to either commit or rollback those changes.
  */
 public class UnitOfWork {
-    private List<IGateway> newObjects = new LinkedList<>();
+    public List<IGateway> newObjects = new LinkedList<>();
     private List<IGateway> dirtyObjects = new LinkedList<>();
     private List<IGateway> cleanObjects = new LinkedList<>();
     private List<IGateway> deletedObjects = new LinkedList<>();

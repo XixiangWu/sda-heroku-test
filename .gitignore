@@ -32,5 +32,6 @@ hs_err_pid*
 /out
 
 .DS_Store
-src/database/DBConnection.java
 
+# DBConenction.java local/online
+src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java

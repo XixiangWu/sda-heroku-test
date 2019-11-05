@@ -38,6 +38,7 @@ public class EditIssue extends HttpServlet {
         out.println("<title>Edit Isuue</title>");
         out.println("</head>");
         out.println("<body>");
+        out.println("");
         // TODO: Show issue details edit form for Employee only if Employee is issue reporter
         // TODO: Show issue comment add/edit form if Tech
         // TODO: Show change issue status/stickied form if Tech

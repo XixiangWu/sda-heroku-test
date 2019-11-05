@@ -7,73 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/it-support-management-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/META-INF/war-tracker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/sql_DB_setup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DepartmentFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DepartmentGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/EmployeeGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueCommentFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueCommentGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/Registry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechSkillFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/TechSkillGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UnitOfWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UserFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UserGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Issue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/IssueComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/IssueStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Tech.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/TechSkill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditIssue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/TestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/sql_insert_update_feature_B.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProjectMaven.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_DB_setup.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookshop/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookshop/BookFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bookshop/browseAllBooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/BookGateway.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DBConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/Registry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/IssueGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UnitOfWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/UnitOfWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +123,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sql" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -190,6 +133,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="database" />
@@ -316,7 +262,7 @@
       <workItem from="1572788970183" duration="3950000" />
       <workItem from="1572794452722" duration="1871000" />
       <workItem from="1572796902920" duration="2907000" />
-      <workItem from="1572801452331" duration="7340000" />
+      <workItem from="1572801452331" duration="26536000" />
     </task>
     <servers />
   </component>
