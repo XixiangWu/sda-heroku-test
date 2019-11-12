@@ -23,7 +23,39 @@
     <servlet-name>ViewIssues</servlet-name>
     <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.ViewIssues</servlet-class>
   </servlet>
-  
+  <servlet>
+    <servlet-name>ViewAppointments</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.ViewAppointments</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ViewAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.ViewAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SubmitAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.SubmitAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.EditAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.DeleteAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddTimeEstimatedAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.AddTimeEstimatedAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AcceptAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.AcceptAppointment</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResolveAppointment</servlet-name>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.ResolveAppointment</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern></url-pattern>
@@ -42,6 +74,43 @@
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>ViewIssues</servlet-name>
+    <url-pattern>/viewIssues</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewIssues</servlet-name>
     <url-pattern>/view</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAppointments</servlet-name>
+    <url-pattern>/viewAppointments</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewAppointment</servlet-name>
+    <url-pattern>/viewAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitAppointment</servlet-name>
+    <url-pattern>/submitAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditAppointment</servlet-name>
+    <url-pattern>/editAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAppointment</servlet-name>
+    <url-pattern>/deleteAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTimeEstimatedAppointment</servlet-name>
+    <url-pattern>/addTimeEstimatedAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AcceptAppointment</servlet-name>
+    <url-pattern>/acceptAppointment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResolveAppointment</servlet-name>
+    <url-pattern>/resolveAppointment</url-pattern>
+  </servlet-mapping>
+
 </web-app>

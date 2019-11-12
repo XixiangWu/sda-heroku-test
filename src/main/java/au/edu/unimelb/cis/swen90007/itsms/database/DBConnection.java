@@ -5,6 +5,7 @@ import java.sql.*;
 /**
  * The DBConnection provides methods for creating SQL statements
  * for the connected database and managing database-level transactions.
+ * The DBConnection.java itself is a singleton class
  */
 public class DBConnection {
 
@@ -14,25 +15,36 @@ public class DBConnection {
     private static final String DB_USER = "postgres";
     private static final String DB_PASSWORD = "xindefengbao12";
 
+
+    /**
+     * Creates a connection to the database at the URL set by the
+     * "JDBC_DATABASE_URL" system variable.
+     */
     private DBConnection() throws SQLException {
         try {
             DriverManager.registerDriver(new org.postgresql.Driver());
 
             //Local Deployment
-//            this.connection = DriverManager.getConnection(DB_CONNECTION,DB_USER,DB_PASSWORD);
+            this.connection = DriverManager.getConnection(DB_CONNECTION,DB_USER,DB_PASSWORD);
             // Heroku Deployment
-            String dbUrl = System.getenv("JDBC_DATABASE_URL");
-            this.connection = DriverManager.getConnection(dbUrl);
+//            String dbUrl = System.getenv("JDBC_DATABASE_URL");
+//            this.connection = DriverManager.getConnection(dbUrl);
             connection.setAutoCommit(false);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public Connection getDBConnection() {
+    /**
+     * Returns the current Connection
+     */
+    private Connection getDBConnection() {
         return connection;
     }
 
+    /**
+     * Create and return the singleton instance of the DBConnection
+     */
     public static DBConnection getInstance() throws SQLException {
         if (instance==null) {
             instance = new DBConnection();
@@ -41,39 +53,6 @@ public class DBConnection {
         }
         return instance;
     }
-
-    /**
-     * Creates and returns a connection to the database at the URL set by the
-     * "JDBC_DATABASE_URL" system variable.
-     * @return Connection to the PostgreSQL Database
-     */
-//    private static Connection getDBConnection() {
-//        // Local Version
-//        try {
-//            DriverManager.registerDriver(new org.postgresql.Driver());
-//            Connection dbConnection = DriverManager.getConnection(DB_CONNECTION,DB_USER,DB_PASSWORD);
-//            dbConnection.setAutoCommit(false);
-//
-//            dbConnection.prepareStatement("INSERT INTO APP.issues (reporter_id, title, status, description, stickied, time_submitted)\n" +
-//                    "VALUES (4, 'dbConnection', 'open', 'My laptop has frozen and doesn''t work anymore', false, '2019-09-10 12:42:10');").executeUpdate();
-//
-//            return dbConnection;
-//        } catch (SQLException e) {
-//            System.out.println(e.getMessage());
-//        }
-//         Deploy Version
-//        try {
-//            DriverManager.registerDriver(new org.postgresql.Driver());
-//            String dbUrl = System.getenv("JDBC_DATABASE_URL");
-//            Connection dbConnection = DriverManager.getConnection(dbUrl);
-//            dbConnection.setAutoCommit(false);
-//            return dbConnection;
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println("Problem connecting to DB");
-//        return null;
-//    }
 
     /**
      * Prepares the provided SQL statement string into a PreparedStatement
@@ -117,9 +96,7 @@ public class DBConnection {
      * @throws SQLException
      */
     public static void commit() throws SQLException {
-//        getDBConnection().prepareStatement("INSERT INTO APP.issues (reporter_id, title, status, description, stickied, time_submitted)\n" +
-//                "VALUES (4, 'Commit', 'open', 'My laptop has frozen and doesn''t work anymore', false, '2019-09-10 12:42:10');").executeUpdate();
-//        getDBConnection().commit();
+        instance.getDBConnection().commit();
         System.out.println("Commit block executed");
     }
 

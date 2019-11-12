@@ -14,6 +14,7 @@ public class Registry {
     private static Map<Integer, IssueCommentGateway> issueCommentMap = new HashMap<>();
     private static Map<Integer, DepartmentGateway> departmentMap = new HashMap<>();
     private static Map<Integer, TechSkillGateway> techSkillMap = new HashMap<>();
+    private static Map<Integer, AppointmentGateway> appointmentMap = new HashMap<>();
 
     public static UserGateway getUser(int id) {
         return userMap.get(id);
@@ -29,6 +30,12 @@ public class Registry {
 
     public static void addIssue(IssueGateway issueGateway) {
         issueMap.put(issueGateway.getId(), issueGateway);
+    }
+
+    public static AppointmentGateway getAppointment(int id) { return appointmentMap.get(id); }
+
+    public static void addAppointment(AppointmentGateway appointmentGateway) {
+        appointmentMap.put(appointmentGateway.getId(), appointmentGateway);
     }
 
     public static IssueCommentGateway getIssueComment(int id) {

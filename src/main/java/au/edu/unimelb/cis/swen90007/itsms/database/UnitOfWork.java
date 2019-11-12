@@ -49,7 +49,7 @@ public class UnitOfWork {
             object.delete();
         }
         try {
-            DBConnection.commit();
+            DBConnection.getInstance().commit();
         } catch (SQLException e) {
             e.printStackTrace();
         }

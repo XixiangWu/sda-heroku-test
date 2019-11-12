@@ -18,6 +18,9 @@ public class IssueFinder {
     private static final String findAllIssuesStatementString =
             "SELECT * FROM APP.issues";
 
+    private static final String findIssuesStatementByUserString =
+            "SELECT * FROM APP.issues WHERE reporter_id = ?";
+
     /**
      * Retrieves the data for the issue associated with the
      * provided Issue ID, if it exists.
@@ -50,6 +53,26 @@ public class IssueFinder {
             PreparedStatement findAllIssuesStatement =
                     DBConnection.prepare(findAllIssuesStatementString);
             ResultSet rs = findAllIssuesStatement.executeQuery();
+            while (rs.next()) {
+                result.add(IssueGateway.load(rs));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
+    /**
+     * Retrieves the data for all issues in the connected database.
+     * @return a List of IssueGateway objects for requested user's issues.
+     * */
+    public List<IssueGateway> findIssuesByUser(int reporter_id) {
+        List<IssueGateway> result = new ArrayList<>();
+        try {
+            PreparedStatement findIssuesByUserStatement =
+                    DBConnection.prepare(findIssuesStatementByUserString);
+            findIssuesByUserStatement.setInt(1, reporter_id);
+            ResultSet rs = findIssuesByUserStatement.executeQuery();
             while (rs.next()) {
                 result.add(IssueGateway.load(rs));
             }

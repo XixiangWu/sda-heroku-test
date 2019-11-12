@@ -1,5 +1,6 @@
 package au.edu.unimelb.cis.swen90007.itsms.scripts;
 
+import au.edu.unimelb.cis.swen90007.itsms.domain.Tech;
 import au.edu.unimelb.cis.swen90007.itsms.domain.User;
 
 import javax.servlet.ServletException;
@@ -13,7 +14,6 @@ import java.io.PrintWriter;
 
 public class EditIssue extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // TODO: Process issue edits
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
