@@ -25,10 +25,10 @@ public class DBConnection {
             DriverManager.registerDriver(new org.postgresql.Driver());
 
             //Local Deployment
-            this.connection = DriverManager.getConnection(DB_CONNECTION,DB_USER,DB_PASSWORD);
+//            this.connection = DriverManager.getConnection(DB_CONNECTION,DB_USER,DB_PASSWORD);
             // Heroku Deployment
-//            String dbUrl = System.getenv("JDBC_DATABASE_URL");
-//            this.connection = DriverManager.getConnection(dbUrl);
+            String dbUrl = System.getenv("JDBC_DATABASE_URL");
+            this.connection = DriverManager.getConnection(dbUrl);
             connection.setAutoCommit(false);
         } catch (SQLException e) {
             e.printStackTrace();

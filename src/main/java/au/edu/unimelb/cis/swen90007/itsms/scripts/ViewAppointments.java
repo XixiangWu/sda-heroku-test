@@ -74,11 +74,6 @@ public class ViewAppointments extends HttpServlet {
             table += "</tbody>";
             table += "</table>";
 
-            // TODO: Order issues by if stickied
-            // TODO: Add list of all issue details for issue specified in url
-            // TODO: Redirect to original table if issueid in url is invalid
-            // TODO: Vary page based on if Tech or Employee (Employee can only see own issues)
-
         } else if (user instanceof Tech) {
 
             appointmentsList = Appointment.getAllAppointments();

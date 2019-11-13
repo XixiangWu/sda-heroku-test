@@ -35,7 +35,6 @@ public class AcceptAppointment extends HttpServlet {
             }
         }
 
-
         String appointmentId = request.getParameter("appointmentid");
         AppointmentFinder appointmentFinder = new AppointmentFinder();
         AppointmentGateway appointmentGateway = appointmentFinder.find(Integer.parseInt(appointmentId));
