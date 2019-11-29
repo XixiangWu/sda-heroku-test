@@ -6,6 +6,7 @@ import au.edu.unimelb.cis.swen90007.itsms.domain.AppointmentStatus;
 import au.edu.unimelb.cis.swen90007.itsms.domain.Tech;
 import au.edu.unimelb.cis.swen90007.itsms.domain.User;
 import au.edu.unimelb.cis.swen90007.itsms.factory.FrontEndFactory;
+import au.edu.unimelb.cis.swen90007.itsms.session.AppSession;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -25,15 +26,29 @@ import java.util.List;
 public class AddTimeEstimatedAppointment extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // Session Check
+        /* Session Verification */
         User user = null;
-        HttpSession session = request.getSession(false);
-        if (session == null) {
-            response.sendRedirect("/login");
-            return;
+        if (AppSession.isAuthenticated()) {
+            /* All user roles can access this page */
+            if (AppSession.hasRole(AppSession.TECH_ROLE)) {
+                user = AppSession.getUser();
+            }
         } else {
-            user = User.getUser((Integer) session.getAttribute("userId"));
+            response.sendRedirect("/login");
         }
+        if (user == null) {
+            getServletContext().getRequestDispatcher("/viewAppointments").forward(request, response);
+        }
+
+
+//        HttpSession session = request.getSession(true);
+//        session.setAttribute("currentSessionUser", user.getUsername());
+//
+//
+//        if (request.getSession().getAttribute("currentSessionUser") == null) {
+//            response.sendRedirect("/login");
+//            return;
+//        }
 
         String appointmentId = request.getParameter("appointmentid");
         Timestamp timestamp = Timestamp.valueOf(LocalDateTime.now());
@@ -52,17 +67,19 @@ public class AddTimeEstimatedAppointment extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        /* Session Verification */
         User user = null;
-        HttpSession session = request.getSession(false);
-        if (session == null) {
-            response.sendRedirect("/login");
-            return;
-        } else {
-            user = User.getUser((Integer) session.getAttribute("userId"));
-            if (user == null) {
-                response.sendRedirect("/login");
-                return;
+        if (AppSession.isAuthenticated()) {
+            /* All user roles can access this page */
+            if (AppSession.hasRole(AppSession.TECH_ROLE)) {
+                user = AppSession.getUser();
             }
+        } else {
+            response.sendRedirect("/login");
+        }
+        if (user == null) {
+            getServletContext().getRequestDispatcher("/viewAppointments").forward(request, response);
         }
 
         int appointmentId = Integer.parseInt(request.getParameter("appointmentid"));
@@ -109,13 +126,12 @@ public class AddTimeEstimatedAppointment extends HttpServlet {
 
 
         request.setAttribute("options", options);
-        request.setAttribute("navbar", FrontEndFactory.navBarGenerator(user.getFirstName() + " " + user.getLastName()));
-        request.setAttribute("script", FrontEndFactory.scriptGenerator());
         request.setAttribute("description", appointmentGateway.getDescription());
         request.setAttribute("appointmentid", appointmentGateway.getId());
         request.setAttribute("dateOptions", dateOptions);
         request.setAttribute("timeOptions", timeOptions);
 
-        request.getRequestDispatcher("addTimeEstimatedAppointment.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/addTimeEstimatedAppointment.jsp").forward(request, response);
+
     }
 }

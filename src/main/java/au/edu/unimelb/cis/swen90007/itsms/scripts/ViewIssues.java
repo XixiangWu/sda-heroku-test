@@ -63,7 +63,7 @@ public class ViewIssues extends HttpServlet {
         // TODO: Vary page based on if Tech or Employee (Employee can only see own issues)
 
         // Pass the user name
-        request.setAttribute("navbar", FrontEndFactory.navBarGenerator(user.getFirstName() + " " + user.getLastName()));
+        request.setAttribute("navbar", FrontEndFactory.navBarGenerator(user.getUsername()));
         request.setAttribute("header", FrontEndFactory.headerGenerator());
         request.setAttribute("table", table);
         request.setAttribute("script", FrontEndFactory.scriptGenerator());

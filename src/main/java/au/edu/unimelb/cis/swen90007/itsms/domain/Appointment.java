@@ -195,4 +195,8 @@ public class Appointment {
         AppointmentGateway appointmentGateway = finder.find(appointment.getId());
         unitOfWork.registerDeleted(appointmentGateway);
     }
+
+    public static AppointmentDTO createAppointmentDTO(AppointmentGateway appointment) {
+        return new AppointmentDTO(appointment);
+    }
 }

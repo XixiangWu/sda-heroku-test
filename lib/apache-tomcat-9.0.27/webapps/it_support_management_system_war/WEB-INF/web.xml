@@ -9,7 +9,7 @@
   <display-name>IT Support Management System Web Application</display-name>
   <servlet>
     <servlet-name>Login</servlet-name>
-    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.Login</servlet-class>
+    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.LoginControllerServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>EditIssue</servlet-name>

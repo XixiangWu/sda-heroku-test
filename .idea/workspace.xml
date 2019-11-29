@@ -2,15 +2,67 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="it-support-management-system:war" />
+      <artifact name="it-support-management-system:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/xixiangwu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/RemoteFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/AppRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/AppointmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/AppointmentDTOAssembler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/lock/LockManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/lock/ReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/session/AppSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shiro.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/it_support_management_system_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it-support-management-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/it-support-management-system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/apache-tomcat-9.0.27/webapps/it_support_management_system_war/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/AppointmentFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/AppointmentFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/AppointmentGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/database/AppointmentGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/domain/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/AcceptAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/AcceptAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/AddTimeEstimatedAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/AddTimeEstimatedAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/DeleteAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/DeleteAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/EditAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/LoginControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ResolveAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ResolveAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewAppointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewAppointments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewAppointments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DesignRevision.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addTimeEstimatedAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addTimeEstimatedAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/agency-landing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app-promo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/shards-demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/submitNewAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/submitNewAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viewAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viewAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viewAppointments.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viewAppointments.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/DesignRevision.url" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/addTimeEstimatedAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/addTimeEstimatedAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/agency-landing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/app-promo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/editAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/editAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/shards-demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/submitNewAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/submitNewAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/viewAppointment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/viewAppointment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/it-support-management-system/viewAppointments.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/it-support-management-system/viewAppointments.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,9 +130,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -108,6 +160,11 @@
         <option name="failureBehavior" value="FAST" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1T3jwPsxV1c0I7QPHnSOlVmudTz" />
   <component name="ProjectLevelVcsManager">
@@ -120,18 +177,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.21609196" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="database" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/sql" />
     </key>
@@ -140,8 +198,9 @@
       <recent name="au.edu.unimelb.cis.swen90007.itsms.database" />
       <recent name="au.edu.unimelb.cis.swen90007.itsms.domain" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="database" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,7 +217,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="it-support-management-system:war exploded">
@@ -266,7 +326,9 @@
       <workItem from="1572794452722" duration="1871000" />
       <workItem from="1572796902920" duration="2907000" />
       <workItem from="1572801452331" duration="77657000" />
-      <workItem from="1573620613594" duration="2183000" />
+      <workItem from="1573620613594" duration="21060000" />
+      <workItem from="1573829712851" duration="36798000" />
+      <workItem from="1574013963789" duration="3114000" />
     </task>
     <servers />
   </component>

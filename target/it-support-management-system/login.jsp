@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<%@ page import="au.edu.unimelb.cis.swen90007.itsms.session.AppSession" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+
 <html lang="en">
 <head>
-	<title>Login V10</title>
+	<title>IT Support Management System</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -28,7 +31,9 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+
+<% if(!AppSession.isAuthenticated()) { %>
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
@@ -37,7 +42,6 @@
 						IT Support Management System
 					</span>
 
-					
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
                         <input type='text' id='username' class='form-control input100' name='username' required autofocus placeholder="Username">
 						<span class="focus-input100"></span>
@@ -59,7 +63,12 @@
 			</div>
 		</div>
 	</div>
-	
+
+<% } else { %>
+
+	You are already logged in as <%=AppSession.getUser().getUsername()%>
+
+<% } %>
 
 	<div id="dropDownSelect1"></div>
 	

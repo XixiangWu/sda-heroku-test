@@ -6,6 +6,8 @@ import au.edu.unimelb.cis.swen90007.itsms.database.UnitOfWork;
 import au.edu.unimelb.cis.swen90007.itsms.domain.Appointment;
 import au.edu.unimelb.cis.swen90007.itsms.domain.AppointmentStatus;
 import au.edu.unimelb.cis.swen90007.itsms.domain.User;
+import au.edu.unimelb.cis.swen90007.itsms.session.AppSession;
+import au.edu.unimelb.cis.swen90007.itsms.session.AppSession;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -22,17 +24,18 @@ public class AcceptAppointment extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        /* Session Verification */
         User user = null;
-        HttpSession session = request.getSession(false);
-        if (session == null) {
-            response.sendRedirect("/login");
-            return;
-        } else {
-            user = User.getUser((Integer) session.getAttribute("userId"));
-            if (user == null) {
-                response.sendRedirect("/login");
-                return;
+        if (AppSession.isAuthenticated()) {
+            /* All user roles can access this page */
+            if (AppSession.hasRole(AppSession.TECH_ROLE)) {
+                user = AppSession.getUser();
             }
+        } else {
+            response.sendRedirect("/login");
+        }
+        if (user == null) {
+            getServletContext().getRequestDispatcher("/viewAppointments").forward(request, response);
         }
 
         String appointmentId = request.getParameter("appointmentid");

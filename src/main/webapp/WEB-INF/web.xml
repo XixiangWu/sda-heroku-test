@@ -7,10 +7,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>IT Support Management System Web Application</display-name>
-  <servlet>
-    <servlet-name>Login</servlet-name>
-    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.Login</servlet-class>
-  </servlet>
+
+<!--  <servlet>-->
+<!--    <servlet-name>Login</servlet-name>-->
+<!--    <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.LoginControllerServlet</servlet-class>-->
+<!--  </servlet>-->
   <servlet>
     <servlet-name>EditIssue</servlet-name>
     <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.EditIssue</servlet-class>
@@ -56,14 +57,14 @@
     <servlet-class>au.edu.unimelb.cis.swen90007.itsms.scripts.ResolveAppointment</servlet-class>
   </servlet>
 
-  <servlet-mapping>
-    <servlet-name>Login</servlet-name>
-    <url-pattern></url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>Login</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Login</servlet-name>-->
+<!--    <url-pattern></url-pattern>-->
+<!--  </servlet-mapping>-->
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>Login</servlet-name>-->
+<!--    <url-pattern>/login</url-pattern>-->
+<!--  </servlet-mapping>-->
   <servlet-mapping>
     <servlet-name>EditIssue</servlet-name>
     <url-pattern>/edit</url-pattern>
@@ -112,5 +113,22 @@
     <servlet-name>ResolveAppointment</servlet-name>
     <url-pattern>/resolveAppointment</url-pattern>
   </servlet-mapping>
+  
+  <listener>
+    <listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
+  </listener>
 
+  <filter>
+    <filter-name>ShiroFilter</filter-name>
+    <filter-class>org.apache.shiro.web.servlet.ShiroFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>ShiroFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+  </filter-mapping>
 </web-app>

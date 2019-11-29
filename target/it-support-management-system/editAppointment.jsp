@@ -1,3 +1,6 @@
+<%@ page import="au.edu.unimelb.cis.swen90007.itsms.session.AppSession" %>
+<%@ page import="au.edu.unimelb.cis.swen90007.itsms.factory.FrontEndFactory" %>
+
 <!-- Header -->
 <!doctype html>
 <html class="no-js" lang="en">
@@ -14,7 +17,12 @@
 </head>
 
 <!-- Navigation Bar -->
-${navbar}
+    <% AppSession wrappedAppSession = AppSession.refreshSession(session);
+    if (session.isNew()) { %>
+    <%=FrontEndFactory.navBarGenerator("new user")%>
+    <%} else {%>
+    <%=FrontEndFactory.navBarGenerator(wrappedAppSession.getUser().getUsername())%>
+    <% } %>
 
 <div id="table" class="container">
     <div class="section-title col-lg-12 col-md-10 ml-auto mr-auto">
@@ -52,4 +60,4 @@ ${navbar}
     </div>
 </div>
 
-${script}
+<%=FrontEndFactory.scriptGenerator()%>

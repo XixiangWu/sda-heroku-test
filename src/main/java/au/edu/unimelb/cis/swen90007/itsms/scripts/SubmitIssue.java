@@ -84,7 +84,7 @@ public class SubmitIssue extends HttpServlet {
         submit += "</div>";
         submit += "</form>";
 
-        request.setAttribute("navbar", FrontEndFactory.navBarGenerator(user.getFirstName() + " " + user.getLastName()));
+        request.setAttribute("navbar", FrontEndFactory.navBarGenerator("username"));
         request.setAttribute("submit", submit);
         request.setAttribute("script", FrontEndFactory.scriptGenerator());
         request.getRequestDispatcher("submitNewIssue.jsp").forward(request, response);

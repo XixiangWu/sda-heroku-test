@@ -22,7 +22,7 @@ public class AppointmentFinder {
             "SELECT * FROM APP.appointments WHERE reporter_id = ?";
 
     /**
-     * Retrieves the data for the issue associated with the
+     * Retrieves the data for the appointment associated with the
      * provided Issue ID, if it exists.
      * @param appointmentId the appointment's ID.
      * @return a AppointmentGateway object with the appointment's data.
@@ -44,7 +44,7 @@ public class AppointmentFinder {
     }
 
     /**
-     * Retrieves the data for all issues in the connected database.
+     * Retrieves the data for all appointments in the connected database.
      * @return a List of AppointmentGateway objects for each issue.
      */
     public List<AppointmentGateway> findAllAppointments() {
@@ -63,7 +63,7 @@ public class AppointmentFinder {
     }
 
     /**
-     * Retrieves the data for all issues in the connected database.
+     * Retrieves the data for all appointments in the connected database.
      * @return a List of AppointmentGateway objects for each issue.
      */
     public List<AppointmentGateway> findAppointmentsByUser(int userid) {
