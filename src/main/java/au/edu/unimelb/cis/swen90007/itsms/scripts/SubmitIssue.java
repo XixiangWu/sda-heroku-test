@@ -6,6 +6,7 @@ import au.edu.unimelb.cis.swen90007.itsms.domain.IssueStatus;
 import au.edu.unimelb.cis.swen90007.itsms.domain.Tech;
 import au.edu.unimelb.cis.swen90007.itsms.domain.User;
 import au.edu.unimelb.cis.swen90007.itsms.factory.FrontEndFactory;
+import au.edu.unimelb.cis.swen90007.itsms.session.AppSession;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -47,21 +48,19 @@ public class SubmitIssue extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        /* Session Verification */
         User user = null;
-        HttpSession session = request.getSession(false);
-        if (session == null) {
-            response.sendRedirect("/login");
-            return;
+        if (AppSession.isAuthenticated()) {
+            /* All user roles can access this page */
+            if (AppSession.hasRole(AppSession.EMPLOYEE_ROLE)) {
+                user = AppSession.getUser();
+            }
         } else {
-            user = User.getUser((Integer) session.getAttribute("userId"));
-            if (user == null) {
-                response.sendRedirect("/login");
-                return;
-            }
-            if (user instanceof Tech) {
-                response.sendRedirect("/view");
-                return;
-            }
+            response.sendRedirect("/login");
+        }
+        if (user == null) {
+            getServletContext().getRequestDispatcher("/viewAppointments").forward(request, response);
         }
 
         String submit = "";
