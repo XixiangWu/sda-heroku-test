@@ -9,7 +9,6 @@
     <list default="true" id="93f83460-9175-45a9-bb3d-0f9c477a98e7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/SubmitIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/au/edu/unimelb/cis/swen90007/itsms/scripts/ViewIssues.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +275,7 @@
       <workItem from="1573620613594" duration="21060000" />
       <workItem from="1573829712851" duration="36798000" />
       <workItem from="1574013963789" duration="3114000" />
-      <workItem from="1575035236931" duration="1266000" />
+      <workItem from="1575035236931" duration="2329000" />
     </task>
     <servers />
   </component>

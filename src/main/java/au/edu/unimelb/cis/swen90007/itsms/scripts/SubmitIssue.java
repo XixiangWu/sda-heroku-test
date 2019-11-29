@@ -22,18 +22,17 @@ import java.time.LocalDateTime;
 public class SubmitIssue extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // Session Check
+        /* Session Verification */
         User user = null;
-        HttpSession session = request.getSession(false);
-        if (session == null) {
-            response.sendRedirect("/login");
-            return;
-        } else {
-            user = User.getUser((Integer) session.getAttribute("userId"));
-            if (user instanceof Tech) {
-                response.sendRedirect("/view");
-                return;
+        if (AppSession.isAuthenticated()) {
+            /* All user roles can access this page */
+            if (AppSession.hasRole(AppSession.EMPLOYEE_ROLE)) {
+                user = AppSession.getUser();
+            } else {
+                response.sendRedirect("/viewAppointments");
             }
+        } else {
+            response.sendRedirect("/login");
         }
 
         String title = request.getParameter("title");
